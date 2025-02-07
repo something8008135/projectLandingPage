@@ -1,0 +1,34 @@
+
+body {background-color:gray;}
+.container{background-color:green;}
+.header{background-color:yellow;}
+.content{background-color:red;}
+.footer{background-color:blue;}
+
+.contentFirst{background-color:Pink;}
+.contentSecond{background-color:DeepPink;}
+.contentThird{background-color:blueViolet;}
+.contentFourth{background-color:purple;}
+
+
+.container{
+	display:flex;
+	flex-direction:column;
+}
+
+
+.header{
+	display:flex;
+}
+
+.content{
+	display:flex;
+	flex-direction:column;
+}
+
+.footer{
+	display:flex;
+}
+
+
+
