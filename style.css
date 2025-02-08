@@ -1,66 +1,114 @@
 
-body {background-color:gray;}
-.container{background-color:green;}
-.header{background-color:yellow;}
-.content{background-color:red;}
-.footer{background-color:blue;}
+	body {background-color:gray;}
+	.container{background-color:green;}
+	.header{background-color:yellow;}
+	.content{background-color:red;}
+	.footer{background-color:blue;}
 
-.contentFirst{background-color:Pink;}
-.contentSecond{background-color:DeepPink;}
-.contentThird{background-color:blueViolet;}
-.contentFourth{background-color:purple;}
-
-
-
-body{
-	font-family:"Roboto", sans-serif;
-
-	min-height:100vh;
-	margin:0;
-
-	display:flex;
-	justify-content:center;
-}
-
-.container{
-	/*height:100vh;*/
-
-	display:flex;
-	flex-direction:column;
-	
-}
-
-
-.header{
-	display:flex;
-	justify-content:center;
-	padding:10px;
-	gap:500px;
-}
-
-.headerRightLinks{
-	display:flex;
-	gap:20px;
-}
+	.contentFirst{background-color:#1F2937;}
+	.contentSecond{background-color:DeepPink;}
+	.contentThird{background-color:blueViolet;}
+	.contentFourth{background-color:purple;}
 
 
 
-.content{
-	display:flex;
-	flex-direction:column;
-}
+	body{
+		font-family:"Roboto", sans-serif;
+		margin:0;
+				/* height:100vh; */
+	}
 
-.contentFirst{
-	display:flex;
-}
 
-.left-info{
-	padding:25px;
-}
+	.container{
+		display:flex;
+		flex-direction:column;	
+				/* min-height:100vh; */
+	}
 
-.footer{
-	display:flex;
-}
+
+
+
+	.header{
+		display:flex;
+		justify-content:center;
+		padding:10px;
+		gap:500px;
+	}
+
+	.headerRightLinks{
+		display:flex;
+		gap:20px;
+	}
+
+
+	.content{
+		display:flex;
+		flex-direction:column;
+	}
+
+/* .contentFirst, .contentSecond, .contentThird, .contentFourth{} */
+
+	.contentFirst{
+		display:flex;
+		justify-content:center;
+	}
+
+	.left-info{
+		box-sizing:border-box;
+		width:550px;
+	}
+
+	.left-info h1{
+		font-size:48px;
+		color:#F9FAF8;
+	}
+	.left-info p{
+		font-size:18px;
+		color:Lightgray;
+	}
+	.left-info button{
+		background-color:#3882F6;
+	}
+
+
+
+	.contentSecond{
+		display:flex;	
+		flex-direction:column;
+		align-items:center;
+
+		padding-bottom:42px;
+	}
+
+	.secondTitle{
+		font-size:36px;
+		font-weight: 900;
+	}
+
+	.secondThings {
+		display:flex;
+		gap:75px;	
+	}
+
+	.thing{
+		display:flex;
+		flex-direction:column;
+		align-items: center;
+		width: 125px;
+
+		font-size: 14px;
+	}
+
+	.image-box{
+	border-style: solid;
+	border-color: #3882F6;
+	border-radius: 10px;
+	}
+
+
+	.footer{
+		display:flex;
+	}
 
 
 
