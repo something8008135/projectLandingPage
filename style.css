@@ -29,8 +29,6 @@
 	}
 
 
-
-
 	.header{
 		display:flex;
 		justify-content:center;
@@ -142,6 +140,44 @@
 		align-self: end;
 	}
 
+	.contentFourth{
+		display: flex;
+		padding:50px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.blue-box{
+		background-color: #3882F6;
+		display:flex;
+
+		border-radius: 10px;
+		padding:25px;
+		padding-left: 100px;
+		padding-right: 100px;
+		gap:100px;
+
+		max-width: 750px;
+		justify-content: space-around;
+
+		color:white;
+	}
+
+	.centering{						/* this feels wrong */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contentFourth button{
+		padding:4px;
+		padding-left: 18px;
+		padding-right: 18px;
+		border:#F9FAF8 2px solid;
+		color: white;
+		background-color: #3882F6;
+		border-radius: 4px;
+	}
 
 
 	.footer{
