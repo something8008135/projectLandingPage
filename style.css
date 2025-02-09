@@ -18,6 +18,10 @@
 				/* height:100vh; */
 	}
 
+	.bold-text{
+		font-weight: 900;
+	}
+
 	.container{
 		display:flex;
 		flex-direction:column;	
@@ -111,6 +115,32 @@
 		height:125px;
 		width:125px;
 	}	
+
+	.contentThird{
+		display:flex;
+		justify-content: center;
+		align-content:center;
+	}
+
+	.maxim{
+		background-color: #E5E8EB	;
+
+		display:flex;
+		flex-direction: column;
+		text-align: center;
+		max-width:700px;
+	}
+
+	.quote{
+		font-size: 36px;
+		font-weight: lighter;
+		color:#1F2937;
+		font-style: italic;
+	}
+	
+	.author{
+		align-self: end;
+	}
 
 
 
