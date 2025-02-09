@@ -18,7 +18,6 @@
 				/* height:100vh; */
 	}
 
-
 	.container{
 		display:flex;
 		flex-direction:column;	
@@ -78,6 +77,8 @@
 		align-items:center;
 
 		padding-bottom:42px;
+
+		box-sizing: border-box;
 	}
 
 	.secondTitle{
@@ -102,8 +103,15 @@
 	.image-box{
 	border-style: solid;
 	border-color: #3882F6;
-	border-radius: 10px;
+	border-radius: 5px;
 	}
+
+	.secondThings img{
+		display:block;		/*	This removed the empty space under the image inside div with border	*/
+		height:125px;
+		width:125px;
+	}	
+
 
 
 	.footer{
