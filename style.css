@@ -1,6 +1,8 @@
 
-	body {background-color:gray;}
-	.container{background-color:green;}
+	body{background-color: #292929;}
+
+
+	/* .container{background-color:green;}
 	.header{background-color:yellow;}
 	.content{background-color:red;}
 	.footer{background-color:blue;}
@@ -8,14 +10,25 @@
 	.contentFirst{background-color:#1F2937;}
 	.contentSecond{background-color:DeepPink;}
 	.contentThird{background-color:blueViolet;}
-	.contentFourth{background-color:purple;}
+	.contentFourth{background-color:purple;} */
 
-
+	.contentThird{background-color:#E5E8EB;}
+	.contentFourth{background-color:white;}
+	.contentFirst{background-color:#1F2937;}
+	.contentSecond{background-color:white;}
+	.header{background-color:#1F2937;}
 
 	body{
 		font-family:"Roboto", sans-serif;
 		margin:0;
-				/* height:100vh; */
+		
+		/*
+		margin:0 auto;
+		max-width: 1024px;
+		padding: 0 20px;
+		*/
+
+		padding: 0 20%;
 	}
 
 	.bold-text{
@@ -31,9 +44,12 @@
 
 	.header{
 		display:flex;
-		justify-content:center;
-		padding:10px;
-		gap:500px;
+		justify-content:space-around;
+		padding:18px;
+	}
+
+	.headerLeftLinks{
+		color:white;
 	}
 
 	.headerRightLinks{
@@ -47,29 +63,48 @@
 		flex-direction:column;
 	}
 
-/* .contentFirst, .contentSecond, .contentThird, .contentFourth{} */
 
 	.contentFirst{
 		display:flex;
-		justify-content:center;
+		justify-content: center;
+		padding:75px;
 	}
 
-	.left-info{
-		box-sizing:border-box;
-		width:550px;
+	.first-box{
+		display:flex;
+		justify-content: space-between;
+		width:900px;
 	}
 
-	.left-info h1{
+	
+
+
+
+	.contentFirst img {
+		max-height: 250px;
+	}
+	
+
+	div.first-title p{
+		/* width: 550px; what's this IDK*/
 		font-size:48px;
 		color:#F9FAF8;
+		font-weight: 900;
+
 	}
+
 	.left-info p{
+		max-width: 408px;
 		font-size:18px;
 		color:Lightgray;
 	}
+
 	.left-info button{
 		background-color:#3882F6;
+		font-weight: 500;
 	}
+
+
 
 
 
@@ -79,27 +114,42 @@
 		align-items:center;
 
 		padding-bottom:42px;
-
 		box-sizing: border-box;
 	}
 
 	.secondTitle{
+		display: flex;
 		font-size:36px;
 		font-weight: 900;
 	}
 
 	.secondThings {
 		display:flex;
-		gap:75px;	
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		padding:0px;
+		margin:0px;
+		
+		width:100%;					/* chatGTP */
+		max-width: 700px;
+		height:min-content;
 	}
 
 	.thing{
 		display:flex;
+
 		flex-direction:column;
 		align-items: center;
+		/* chatGPT flex: 1 1 125px; This means: grow, shrink, but never go smaller than 200px */	
 		width: 125px;
-
 		font-size: 14px;
+	}
+
+	@media (max-width: 600px) {
+		.thing {
+			flex: 1 1 100%; 		/* ChatGPTFull width in a single column */
+		}
 	}
 
 	.image-box{
@@ -177,11 +227,18 @@
 		color: white;
 		background-color: #3882F6;
 		border-radius: 4px;
+		font-weight: 500;
 	}
 
 
 	.footer{
 		display:flex;
+		justify-content: center;
+		padding: 25px;
+		align-items: center;
+		color:white;
+		font-weight: lighter;
+		background-color: #1F2937;
 	}
 
 
